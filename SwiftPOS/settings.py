@@ -36,8 +36,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pos',
     'account',
+    'jazzmin'
 ]
 EXTERNAL_APPS = [
+ 
 
 ]
 INSTALLED_APPS += EXTERNAL_APPS
@@ -131,7 +133,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'SwiftPOS/static',  # Example app-specific static directory
+    BASE_DIR / 'static',  # Example app-specific static directory
     BASE_DIR / 'static',  # Optional: Additional directory for global static files
 ]
 
@@ -142,6 +144,5 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-LOGIN_REDIRECT_URL = 'index' #AFTER LOGIN REDIRECT IN Home PAGE
+LOGIN_REDIRECT_URL = 'home' #AFTER LOGIN REDIRECT IN Home PAGE
 LOGIN_URL='login'
-
