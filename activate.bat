@@ -1,0 +1,1 @@
+E:\coding\python\django\Collegeproject\env\Scripts\activate.bat
