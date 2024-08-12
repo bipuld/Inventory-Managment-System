@@ -11,7 +11,7 @@ static/img
 staticfiles/img
 media/img
 staticfiles/admin/img
-
+activate.bat
 # Distribution / packaging
 .Python
 build/
