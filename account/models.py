@@ -26,7 +26,7 @@ class UserInfo(models.Model):
     image = models.ImageField(upload_to="profile", blank=True, null=True)
     is_verify = models.BooleanField(default=False)
     intro = models.TextField(blank=True, null=True)
-    email = models.EmailField()
+    email = models.EmailField(unique=True)
 
     @property
     def full_name(self):
